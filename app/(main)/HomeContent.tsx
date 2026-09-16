@@ -19,6 +19,12 @@ const steps = [
 ];
 
 export default function HomeContent() {
+  const handleServicesClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    window.history.pushState(null, '', '#services');
+  };
+
   return (
     <div className="home-page pt-[4.5rem]">
       <section className="home-banner" aria-label="Digital solutions for your business">
@@ -31,7 +37,7 @@ export default function HomeContent() {
             <p className="home-banner-description">Websites, apps, and digital solutions that bring your business forward. Built with care, from the first conversation to launch.</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/contact" className="home-banner-button">Let&apos;s talk about your project <ArrowUpRight size={18} /></Link>
-              <Link href="#services" className="home-banner-link">Explore our services <ArrowRight size={16} /></Link>
+              <Link href="#services" onClick={handleServicesClick} className="home-banner-link">Explore our services <ArrowRight size={16} /></Link>
             </div>
           </motion.div>
           <div className="home-banner-foot">
