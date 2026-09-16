@@ -52,8 +52,6 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         "hero-bg": "hsl(var(--hero-bg))",
-        "surface-dark": "hsl(var(--surface-dark))",
-        "surface-darker": "hsl(var(--surface-darker))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

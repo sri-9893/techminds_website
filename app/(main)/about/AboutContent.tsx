@@ -136,19 +136,19 @@ export default function AboutContent() {
           <div className="grid md:grid-cols-2 gap-8">
             <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="border border-primary-foreground/10 rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-4">
-                <Target size={24} className="text-primary" />
-                <h3 className="text-xl font-bold text-white">Our Mission</h3>
+                <Target size={24} className="text-gold" />
+                <h3 className="text-xl font-bold text-primary-foreground">Our Mission</h3>
               </div>
-              <p className="text-white leading-relaxed">
+              <p className="text-primary-foreground leading-relaxed">
                 To empower businesses with affordable, modern, and effective IT solutions — from web and mobile apps to CRM products and digital marketing — while nurturing the next generation of tech talent through our internship programs.
               </p>
             </motion.div>
             <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="border border-primary-foreground/10 rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-4">
-                <Eye size={24} className="text-primary" />
-                <h3 className="text-xl font-bold text-white">Our Vision</h3>
+                <Eye size={24} className="text-gold" />
+                <h3 className="text-xl font-bold text-primary-foreground">Our Vision</h3>
               </div>
-              <p className="text-white leading-relaxed">
+              <p className="text-primary-foreground leading-relaxed">
                 To become the most trusted IT partner for SMBs and startups in Andhra Pradesh, known for innovation, quality, and our commitment to building a thriving tech community in Nellore.
               </p>
             </motion.div>

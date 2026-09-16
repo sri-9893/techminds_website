@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       'Premium web development, mobile app development, CRM products, and digital marketing services in Nellore, Andhra Pradesh.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#f8f7f1',
-    theme_color: '#102b23',
+    background_color: '#f7fafd',
+    theme_color: '#f5fbfc',
     icons: [
       {
         src: '/favicon.png',

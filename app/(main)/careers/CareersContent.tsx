@@ -44,7 +44,7 @@ export default function CareersContent() {
         caption="Good ideas grow when we build together."
       >
         <a href="#opportunities" className="button-primary">Explore opportunities <ArrowDown size={17} /></a>
-        <span className="inline-flex items-center gap-2 px-2 text-sm text-slate-300"><MapPin size={15} className="hero-accent" /> Nellore, Andhra Pradesh</span>
+        <span className="hero-description inline-flex items-center gap-2 px-2 text-sm"><MapPin size={15} className="hero-accent" /> Nellore, Andhra Pradesh</span>
       </PageHero>
 
       <section className="border-b border-border bg-background" aria-label="Life at Tech Minds">
