@@ -3,11 +3,12 @@
 import { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
+import Image from 'next/image';
 import SubjectPhoto from './SubjectPhoto';
 
-export default function PageHero({ eyebrow, title, description, subject, caption, children }: {
+export default function PageHero({ eyebrow, title, description, subject, imageSrc, caption, children }: {
   eyebrow: string; title: ReactNode; description: string;
-  subject: string; caption: string; children?: ReactNode;
+  subject: string; imageSrc?: string; caption: string; children?: ReactNode;
 }) {
   return (
     <section className="page-hero" aria-label={eyebrow}>
@@ -22,7 +23,7 @@ export default function PageHero({ eyebrow, title, description, subject, caption
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }} className="relative mx-auto w-full max-w-lg lg:col-span-5">
           <figure className="hero-visual group">
-            <SubjectPhoto subject={subject} priority />
+            {imageSrc ? <Image src={imageSrc} alt="Tech Minds team collaborating in an office" width={1400} height={934} priority className="h-full w-full object-cover" sizes="(max-width: 1024px) 100vw, 42vw" /> : <SubjectPhoto subject={subject} priority />}
             <figcaption className="hero-caption"><span>{caption}</span><span className="hero-caption-mark" aria-hidden="true"><ArrowUpRight size={14} /></span></figcaption>
           </figure>
           <div className="hero-visual-accent" aria-hidden="true" />

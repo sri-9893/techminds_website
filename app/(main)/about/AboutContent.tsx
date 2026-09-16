@@ -25,6 +25,7 @@ export default function AboutContent() {
         title={<>A small team.<br /><span className="hero-accent">A shared ambition.</span></>}
         description="Born from a passion for technology and a belief that great digital experiences should be within reach for every business."
         subject="workspace"
+        imageSrc="/images/about-term.jpg"
         caption="Rooted in Nellore. Thinking beyond boundaries."
       >
         <Link href="/contact" className="button-primary">Meet your next IT partner <ArrowRight size={17} /></Link>
@@ -33,8 +34,8 @@ export default function AboutContent() {
       {/* Story */}
       <section className="py-20 bg-card" aria-label="Our story">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+            <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="w-full">
               <h2 className="font-display text-4xl font-normal text-foreground mb-6">How It All Started</h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Tech minds IT Solutions was founded in 2026 with a simple mission: deliver world-class IT solutions at startup speed. Based in Nellore, Andhra Pradesh, we&apos;re a team of passionate developers, designers, and marketers.
@@ -42,7 +43,7 @@ export default function AboutContent() {
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 We believe that every business — whether a local shop or a growing startup — deserves modern, beautiful, and effective digital solutions. That&apos;s why we combine cutting-edge technology with personal attention.
               </p>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {[
                   { num: servicesData.length, suffix: '', label: 'Core Services' },
                   { num: 8, suffix: '+', label: 'Internship Programs' },
@@ -61,11 +62,11 @@ export default function AboutContent() {
             </motion.div>
             <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
               <Image
-                src="/images/photography/workspace.webp"
-                alt="Colleagues discussing a project around laptops in a bright office"
-                width={600}
-                height={400}
-                className="rounded-3xl shadow-card w-full object-cover"
+                src="/images/about-term.jpg"
+                alt="Tech Minds team collaborating around computers in an office"
+                width={1400}
+                height={934}
+                className="w-full rounded-3xl object-cover shadow-card"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </motion.div>
