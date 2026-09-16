@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.env.local
+.DS_Store
+
+.next-review/
+
+# Private applicant records and local service credentials
+.data/
+.env*
+!.env.example
