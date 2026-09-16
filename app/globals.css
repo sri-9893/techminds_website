@@ -725,7 +725,7 @@
   .company-logo-crop {
     position: relative;
     display: inline-block;
-    width: 44px;
+    width: 30px;
     height: 44px;
     flex-shrink: 0;
     overflow: hidden;
@@ -734,13 +734,14 @@
   }
 
   .company-logo-crop .company-logo-image {
-    position: absolute;
-    width: 184%;
-    height: 276%;
-    max-width: none;
-    left: -40%;
-    top: -78%;
-    object-fit: fill;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .brand-name {
+    display: none;
   }
 
   .home-banner {
@@ -1130,7 +1131,8 @@
 
 @media (max-width: 639px) {
   .home-banner .home-banner-image {
-    object-position: center;
+    object-fit: cover;
+    object-position: 100% center;
   }
 
   .home-banner-shade {
