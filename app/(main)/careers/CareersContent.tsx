@@ -35,7 +35,7 @@ export default function CareersContent() {
   };
 
   return (
-    <div className="pt-[4.5rem]">
+    <div>
       <PageHero
         eyebrow="Careers & internships"
         title={<>Build your skills.<br /><span className="hero-accent">Shape what&apos;s next.</span></>}
@@ -88,7 +88,7 @@ export default function CareersContent() {
                       <span className="artwork-badge"><Briefcase size={12} /> Full-time</span>
                     </div>
                     <div className="flex flex-1 flex-col p-6">
-                      <h3 className="text-xl font-semibold tracking-tight">{job.title}</h3>
+                      <h3 className="text-xl font-semibold">{job.title}</h3>
                       <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-xs text-muted-foreground">
                         <span className="inline-flex items-center gap-1.5"><Clock size={13} />{job.experience}</span>
                         <span className="inline-flex items-center gap-1.5"><MapPin size={13} />{job.location}</span>
@@ -118,7 +118,7 @@ export default function CareersContent() {
                       <span className="artwork-badge"><GraduationCap size={13} /> Internship</span>
                     </div>
                     <div className="flex flex-1 flex-col p-6">
-                      <h3 className="text-xl font-semibold tracking-tight">{intern.role}</h3>
+                      <h3 className="text-xl font-semibold">{intern.role}</h3>
                       <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-xs text-muted-foreground">
                         <span className="inline-flex items-center gap-1.5"><Clock size={13} />{intern.duration}</span>
                         <span className="inline-flex items-center gap-1.5"><IndianRupee size={13} />{intern.stipend}</span>

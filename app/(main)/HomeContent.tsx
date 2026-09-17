@@ -26,9 +26,10 @@ export default function HomeContent() {
   };
 
   return (
-    <div className="home-page pt-[4.5rem]">
+    <div className="home-page">
       <section className="home-banner" aria-label="Digital solutions for your business">
-        <Image src="/images/home-studio-banner.webp" alt="Software professionals collaborating at a workstation in a modern studio" fill priority sizes="100vw" className="home-banner-image" />
+        <Image src="/images/banner%20image.png" alt="Software professionals collaborating in a modern office" fill priority sizes="100vw" className="home-banner-image home-banner-image-desktop" />
+        <Image src="/images/mobileview%20banner.png" alt="" fill sizes="100vw" className="home-banner-image home-banner-image-mobile" />
         <div className="home-banner-shade" aria-hidden="true" />
         <div className="container relative mx-auto px-5 md:px-8">
           <motion.div className="home-banner-copy" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65 }}>

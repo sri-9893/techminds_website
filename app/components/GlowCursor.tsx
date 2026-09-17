@@ -53,15 +53,15 @@ export default function GlowCursor() {
 
                 const idleFade = Math.max(0, 1 - (now - lastMove) / 900);
                 const gradient = context.createLinearGradient(points[MAX_POINTS - 1].x, points[MAX_POINTS - 1].y, points[0].x, points[0].y);
-                gradient.addColorStop(0, 'rgba(167, 139, 250, 0)');
-                gradient.addColorStop(0.55, `rgba(103, 232, 249, ${0.18 * idleFade})`);
-                gradient.addColorStop(1, `rgba(255, 255, 255, ${0.85 * idleFade})`);
+                gradient.addColorStop(0, 'rgba(220, 38, 38, 0)');
+                gradient.addColorStop(0.55, `rgba(220, 38, 38, ${0.18 * idleFade})`);
+                gradient.addColorStop(1, `rgba(220, 38, 38, ${0.85 * idleFade})`);
                 context.strokeStyle = gradient;
                 context.lineWidth = 8;
                 context.lineCap = 'round';
                 context.lineJoin = 'round';
                 context.shadowBlur = 18;
-                context.shadowColor = `rgba(103, 232, 249, ${0.8 * idleFade})`;
+                context.shadowColor = `rgba(220, 38, 38, ${0.8 * idleFade})`;
                 context.beginPath();
                 context.moveTo(points[MAX_POINTS - 1].x, points[MAX_POINTS - 1].y);
                 for (let index = MAX_POINTS - 2; index >= 0; index--) context.lineTo(points[index].x, points[index].y);

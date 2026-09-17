@@ -24,7 +24,7 @@ interface Service {
 
 export default function ServiceDetailsContent({ service }: { service: Service }) {
   return (
-    <div className="pt-[4.5rem]">
+    <div>
       <PageHero
         eyebrow="Our expertise"
         title={service.title}
@@ -82,7 +82,7 @@ export default function ServiceDetailsContent({ service }: { service: Service })
       <section className="py-20 gradient-hero" aria-label="Call to action">
         <div className="container mx-auto px-4 text-center">
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h2 className="font-display text-4xl font-normal text-primary-foreground mb-6">
+            <h2 className="font-display text-4xl font-normal text-foreground mb-6">
               Interested in {service.title}?
             </h2>
             <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 gradient-primary text-primary-foreground rounded-2xl font-semibold hover:opacity-90 transition-opacity">

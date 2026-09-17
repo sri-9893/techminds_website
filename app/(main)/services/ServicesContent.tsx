@@ -16,7 +16,7 @@ const stagger = { visible: { transition: { staggerChildren: 0.07 } } };
 
 export default function ServicesContent() {
   return (
-    <div className="pt-[4.5rem]">
+    <div>
       <PageHero
         eyebrow="Our services"
         title={<>Thoughtful design.<br /><span className="hero-accent">Powerful solutions.</span></>}
@@ -40,7 +40,7 @@ export default function ServicesContent() {
               >
                 <div className="relative overflow-hidden">
                   <SubjectPhoto subject={service.slug} />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent" />
                   <div className="absolute bottom-5 left-7 flex items-center gap-3">
                     {service.icon && <span className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/20 bg-background/70 text-2xl shadow-lg backdrop-blur-md">{service.icon}</span>}
                     <span className="text-xs font-bold uppercase tracking-wider text-primary-foreground/80">{service.statsLabel}</span>

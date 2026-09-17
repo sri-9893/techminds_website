@@ -30,7 +30,7 @@ export default function ContactContent() {
   };
 
   return (
-    <div className="pt-[4.5rem]">
+    <div>
       <PageHero
         eyebrow="Contact us"
         title={<>Great work starts<br /><span className="hero-accent">with a conversation.</span></>}

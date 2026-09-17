@@ -19,7 +19,7 @@ const stagger = { visible: { transition: { staggerChildren: 0.07 } } };
 
 export default function AboutContent() {
   return (
-    <div className="pt-[4.5rem]">
+    <div>
       <PageHero
         eyebrow="About Tech Minds"
         title={<>A small team.<br /><span className="hero-accent">A shared ambition.</span></>}
@@ -90,7 +90,7 @@ export default function AboutContent() {
               >
                 <div className="relative w-full overflow-hidden">
                   <SubjectPhoto subject={s.slug} />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/15 to-transparent" />
                   {s.icon && <div className="absolute top-4 left-4 flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-background/60 text-xl shadow-lg backdrop-blur-md transition-transform duration-300 group-hover:scale-[1.02]">
                     {s.icon}
                   </div>}
@@ -137,18 +137,18 @@ export default function AboutContent() {
             <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="border border-primary-foreground/10 rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Target size={24} className="text-gold" />
-                <h3 className="text-xl font-bold text-primary-foreground">Our Mission</h3>
+                <h3 className="text-xl font-bold text-foreground">Our Mission</h3>
               </div>
-              <p className="text-primary-foreground leading-relaxed">
+              <p className="text-foreground leading-relaxed">
                 To empower businesses with affordable, modern, and effective IT solutions — from web and mobile apps to CRM products and digital marketing — while nurturing the next generation of tech talent through our internship programs.
               </p>
             </motion.div>
             <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="border border-primary-foreground/10 rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Eye size={24} className="text-gold" />
-                <h3 className="text-xl font-bold text-primary-foreground">Our Vision</h3>
+                <h3 className="text-xl font-bold text-foreground">Our Vision</h3>
               </div>
-              <p className="text-primary-foreground leading-relaxed">
+              <p className="text-foreground leading-relaxed">
                 To become the most trusted IT partner for SMBs and startups in Andhra Pradesh, known for innovation, quality, and our commitment to building a thriving tech community in Nellore.
               </p>
             </motion.div>
