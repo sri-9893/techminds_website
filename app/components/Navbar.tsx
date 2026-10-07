@@ -97,7 +97,6 @@ const Navbar = () => {
                       href={`/services/${service.slug}`}
                       className="nav-action group/item flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-primary/10 focus-visible:bg-primary/10 focus-visible:outline-none"
                     >
-                      {service.icon && <span className="text-xl transition-transform duration-300 group-hover/item:scale-110">{service.icon}</span>}
                       <span className="block self-center text-sm font-semibold text-foreground">{service.title}</span>
                     </Link>
                   ))}
@@ -163,7 +162,7 @@ const Navbar = () => {
                 <div className="ml-4 mt-1 space-y-1 border-l border-primary/30 pl-3">
                   {servicesData.map((service) => (
                     <Link key={service.id} href={`/services/${service.slug}`} onClick={(event) => refreshIfCurrent(event, `/services/${service.slug}`)} className="nav-action flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-secondary hover:text-foreground">
-                      {service.icon && <span>{service.icon}</span>}{service.title}
+                      {service.title}
                     </Link>
                   ))}
                 </div>

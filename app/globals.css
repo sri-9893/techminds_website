@@ -730,6 +730,14 @@
     display: none;
   }
 
+  .home-banner-location-mobile {
+    display: none;
+  }
+
+  .home-banner-location-desktop {
+    display: inline-flex;
+  }
+
   .home-banner-shade {
     position: absolute;
     z-index: -1;
@@ -812,7 +820,7 @@
     align-items: center;
     gap: 12px;
     padding: 14px 18px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     color: hsl(var(--foreground));
     border-bottom: 1px solid hsl(var(--foreground) / 0.35);
@@ -1101,6 +1109,41 @@
 }
 
 @media (max-width: 639px) {
+  :root {
+    --foreground: 0 0% 4%;
+    --muted-foreground: 0 0% 22%;
+    --primary: 0 76% 38%;
+  }
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .home-banner {
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  body {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  button,
+  a {
+    font-weight: 700;
+  }
+
   .home-banner-image-desktop {
     display: none;
   }
@@ -1123,19 +1166,21 @@
   }
 
   .home-banner h1 {
-    font-size: clamp(2.3rem, 9vw, 3.25rem);
+    font-size: clamp(2.55rem, 10vw, 3.5rem);
+    font-weight: 700;
     margin-top: 25px;
   }
 
   .home-banner-description {
-    font-size: 14px;
+    font-size: 17px;
+    font-weight: 600;
     max-width: 340px;
   }
 
   .home-banner-button {
     gap: 12px;
     padding: 14px 17px;
-    font-size: 11px;
+    font-size: 16px;
   }
 
   .home-banner-link {
@@ -1144,6 +1189,26 @@
 
   .home-banner-foot {
     padding: 21px 0;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .home-banner-location {
+    color: hsl(var(--foreground));
+    font-weight: 800;
+  }
+
+  .home-banner-location-desktop {
+    display: none;
+  }
+
+  .home-banner-location-mobile {
+    display: inline-flex;
+    margin: 0 1.25rem;
+    padding: 0.9rem 0 0.25rem;
+    color: hsl(var(--foreground));
+    font-size: 14px;
+    font-weight: 800;
   }
 
   .home-section-heading {
@@ -1159,7 +1224,8 @@
   }
 
   .home-service-row h3 {
-    font-size: 19px;
+    font-size: 21px;
+    font-weight: 700;
   }
 
   .home-service-description {
@@ -1175,7 +1241,9 @@
   }
 
   .home-service-description>p {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
   }
 
   .home-process-grid {
@@ -1184,11 +1252,13 @@
 
   .home-process-grid h3 {
     margin-top: 18px;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 700;
   }
 
   .home-process-grid p {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .home-career-links>a {
@@ -1197,7 +1267,8 @@
   }
 
   .home-career-links strong {
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 700;
   }
 
   .home-partner-photo>img {
